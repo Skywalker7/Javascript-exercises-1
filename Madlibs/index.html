@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href = "http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href = "css/main.css" rel = "stylesheet" type = "text/css" media = "all">
+    <title>Mad Libs</title>
+  </head>
+  <body>
+    <div class = "container">
+      <!---start form -->
+      <div id = "questions"> 
+        <h1>Let's Make a Story!</h1>
+        <hr>
+        <form role = "form">
+          <label for = "person">Name</label>
+          <input id = "person" class = "form-control person" type = "text" placeholder = "Enter a name...">
+      </div>
+      <div class = "form-group">
+        <label for = "adjective">Adjective</label>
+      <input id = "adjective" class = "form-control adjective" type = "text" placeholder = "Enter an adjective...">
+      </div>
+      <div class = "form-group">
+        <label for = "noun">Plural noun</label>
+        <input id = "noun" class = "form-control noun" type = "text" placeholder = "Enter a plural noun...">
+      </div>
+      <div class = "form-group">
+        <label for = "insect">An insect, plural</label>
+        <input id = "insect" class = "form-control insect" placeholder = "Enter an insect plural...">
+      </div>
+      <div class = "form-group">
+        <label for = "noun2">Plural noun</label>
+        <input id = "noun2" class = "form-control plural-noun" type = "text" placeholder = "Enter a plural noun...">
+      </div>
+      <div class = "form-group">
+        <label for "verb">A verb</label>
+        <input id = "verb" class = "form-control verb" type ="text" placeholder = "Enter a verb...">
+      </div>
+      <div>
+      </div>
+  </form>
+  <button type = "submit" id = "btn-click" class = "btn btn-primary btn-md">Create!</button>
+  <hr>
+</div>
+<!--end form -->
+
+<!-- start story -->
+<div id ="story">
+  <h1>Mad with Libs</h1>
+  <hr>
+  <h3>
+      <span class="person"></span> lives in tiny house on a mountain. The <span class="adjective"></span> mountain is surrounded by green trees and sits by a lake. The lake is home to giant <span class="noun"></span> and dancing <span class="insect"></span>. When I think of them, I get <span class="noun2"></span> in my stomach. I <span class="verb"></span> there often. It's an exciting place.
+  </h3>
+  <div>
+  <button type ="submit" id ="play-btn" class = "btn btn-primary btn-md">Play again?</button>
+  </div>
+</div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
